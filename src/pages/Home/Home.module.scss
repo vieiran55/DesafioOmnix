@@ -1,0 +1,44 @@
+@import 'styles/variaveis';
+@import "styles/breakpoints";
+
+.header {
+    align-items: center;
+    background-image: url("/assets/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 300px;
+    padding: 0px;
+    justify-content: center;
+    @media (max-width: $desktop_xsm) {
+      padding: 0px $padding-horizontal-mobile;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: 0px $padding-horizontal-sm;
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: 0px $padding-horizontal-md;
+    }
+    &__text {
+        align-items: center;
+        text-align: center;
+        color: $dark-grey;
+        font-size: 7rem;
+        min-width: 600px;
+        width: 40%;
+      }
+}
+.informacoes{
+    color: $dark;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    margin: 3em;
+input{
+    width: 135px;
+    font-weight: bold;
+}
+}
