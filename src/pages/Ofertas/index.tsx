@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Ofertas.module.scss';
+import equipamentos from 'dados/equipamentos.json';
+import Itens from './Itens';
 
 interface Props {
   inputcep: string
@@ -32,27 +34,18 @@ export default function Ofertas(props: Props) {
   const valoresString = valores.map(function (item, indice) {
     return item.toString();
   });
-  console.log(valoresString[1]);
+
+  const cep = valoresString[0];
+  const rua = valoresString[1];
+  const complemento = valoresString[2];
+  const bairro = valoresString[3];
+  const cidade = valoresString[4];
+  const estado = valoresString[5];
 
   // objectArray.forEach(([key, value]) => {
   //   console.log(key); // 'one'
   //   console.log(value); // 1
   // });
-
-  // const entries = Object.entries(repositorio);
-  // console.log(entries[1]);
-  // const cep = entries[1];
-  // const ceep = cep[1];
-  // const x = ceep.toString();
-
-
-
-  // Object.keys(repositorio).map(function(key, value) {
-  //   console.log('"A chave é: "' + key);
-  //   console.log('"O valor é: " '+ value);
-  // });
-
-
   useEffect(() => {
     // utilizamos uma função async
     async function carregaRepositorios() {
@@ -74,21 +67,31 @@ export default function Ofertas(props: Props) {
           {'<- Voltar'}
         </button>
       </div>
-      <div>
-        <form method="get" action=".">
+      <div className={styles.container}>
+        <form method="get" action="." className={styles.container__formulario}>
           <label>Cep:
-            <input name="cep" type="text" id="cep" value={valoresString[0]} disabled /></label><br />
+            <input name="cep" type="text" id="cep" value={cep} disabled /></label><br />
           <label>Rua:
-            <input name="rua" type="text" id="rua" value={valoresString[1]} disabled /></label><br />
+            <input name="rua" type="text" id="rua" value={rua} disabled /></label><br />
           <label>Complemento:
-            <input name="bairro" type="text" id="bairro" value={valoresString[2]} disabled /></label><br />
+            <input name="bairro" type="text" id="bairro" value={complemento} disabled /></label><br />
           <label>Bairro:
-            <input name="bairro" type="text" id="bairro" value={valoresString[3]} disabled /></label><br />
+            <input name="bairro" type="text" id="bairro" value={bairro} disabled /></label><br />
           <label>Cidade:
-            <input name="cidade" type="text" id="cidade" value={valoresString[4]} disabled /></label><br />
+            <input name="cidade" type="text" id="cidade" value={cidade} disabled /></label><br />
           <label>Estado:
-            <input name="uf" type="text" id="uf" value={valoresString[5]} disabled /></label><br />
+            <input name="uf" type="text" id="uf" value={estado} disabled /></label>
         </form>
+      </div>
+      <div className={styles.itens}>
+        { equipamentos.map(item => (
+          <Itens key={item.id} {...item}/>
+        ))}
+      </div>
+      <div className={styles.botao}>
+        <button className={styles.botao__errei} onClick={() => navigate(-1)}>
+        Ops, errei meu cep!
+        </button>
       </div>
     </>
   );

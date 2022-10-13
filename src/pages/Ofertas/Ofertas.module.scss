@@ -1,3 +1,5 @@
+@import 'styles/variaveis';
+@import "styles/breakpoints";
 .voltar {
     display: flex;
     justify-content: flex-start;
@@ -10,4 +12,47 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  &__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: $grey;
+    max-width: 320px;
+    padding: 0px 1em;
+    input{
+    font-weight: bolder;
+    color: black;
+    }
+  }
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5em;
+  gap: 40px;
+  width: 100%;
+  @media (min-width: $mobile) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.botao{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &__errei{
+  }
 }

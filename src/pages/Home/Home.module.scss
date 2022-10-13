@@ -7,25 +7,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    height: 300px;
+    height: 59px;
     padding: 0px;
     justify-content: center;
-    @media (max-width: $desktop_xsm) {
-      padding: 0px $padding-horizontal-mobile;
+    @media (min-width: $mobile) {
+      height: 133px;
+      width: 100%;
     }
-    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-      padding: 0px $padding-horizontal-sm;
-    }
-    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-      padding: 0px $padding-horizontal-md;
+    @media (min-width: $desktop_md) {
+      height: 215px;
+      width: 100%;
     }
     &__text {
         align-items: center;
         text-align: center;
         color: $dark-grey;
-        font-size: 7rem;
-        min-width: 600px;
+        font-size: 2rem;
         width: 40%;
+        @media (min-width: $mobile) {
+          font-size: 4rem;
+        }
+        @media (min-width: $desktop_md) {
+          font-size: 6rem;
+        }
       }
 }
 .informacoes{

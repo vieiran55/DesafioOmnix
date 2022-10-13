@@ -1,0 +1,74 @@
+@import 'styles/variaveis';
+@import "styles/breakpoints";
+
+.item {
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    transition: .2s ease-in;
+    max-width: 320px;
+    background-color: $grey;
+    @media (min-width: $mobile) {
+        height: 400px;
+      }
+      @media (min-width: $desktop_md) {
+      }
+    &:hover {
+      background-color: $grey;
+    }
+    &__imagem {
+      img {
+        float: left;
+        border-radius: 8px;
+        width: 130px;
+        height: 130px;
+        background-size:cover;
+        margin-right: 5px;
+      }
+      p {
+        text-align: justify;
+        color: $dark-grey;
+        font-size: 0.7rem;
+        font-weight: 600;
+        max-width: 600px;
+        margin-bottom: 20px;
+      }
+    }
+    &__descricao {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 20px;
+      @media (max-width: $desktop_xsm) {
+        flex-direction: row;
+        margin-top: 20px;
+        padding: 0;
+      }
+    }
+    &__titulo {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      h2 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+    &__valor {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: $red;
+        width: 100%;
+    }
+  }

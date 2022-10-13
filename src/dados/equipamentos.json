@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Placa-Mãe ASRock B450M",
+      "description": "Placa-mãe ASRock B450M Steel Legend AMD DDR4 Resistente como aço, verdadeira lenda a Steel Legend representa o estado filosófico da sólida durabilidade e irresistível estética. Construída ao redor das especificações e recursos mais exigentes, a série Steel Legend visa os usuários do dia a dia e entusiastas mainstream!Oferecendo uma forte gama de materiais/componentes para assegurar um desempenho estável e confiável.",
+      "photo": "/assets/equipamentos/asrock.png",
+      "price": 769.99,
+      "id": 1
+    },
+    {
+        "title": "SSD 960 GB Kingston A400",
+        "description": "SSD Kingston A400 960GB Sata Tempos incríveis de inicialização A unidade de estado sólido A400 da Kingston aumenta drasticamente a resposta do seu computador com tempos incríveis de inicialização, carregamento e transferência, comparados a discos rígidos mecânicos. Reforçado com uma controladora de última geração para velocidades de leitura e gravação de até 500MB/s e 450MB/s¹, este SSD é 10x mais rápido do que um disco rígido tradicional para melhor desempenho, resposta ultrarrápida em multitarefas e um computador mais rápido de modo geral. Também mais confiável e durável do que um disco rígido, o A400 é feito com memória Flash.",
+        "photo": "/assets/equipamentos/SSD960GBKingston.png",
+        "price": 445.99,
+        "id": 2
+      },
+      {
+        "title": "Fonte XPG Core Reactor, 850W, 80 Plus Gold Modular",
+        "description": "A XPG CORE REACTOR é uma fonte de alimentação modular 80 Plus Gold equipada com capacitores 100% japoneses. É confiável, eficiente em termos de energia, e facilita a criação de uma construção organizada.",
+        "photo": "/assets/equipamentos/FonteXPGCoreReactor.png",
+        "price": 699.99,
+        "id": 3
+      },
+      {
+        "title": "Placa de Vídeo Galax GeForce RTX 3060",
+        "description": "Como todas as GPUs GeForce RTX Series, a GeForce RT 3060 oferece suporte à trifeta das inovações em jogos da GeForce: NVIDIA DLSS, NVIDIA Reflex e NVIDIA Broadcast, que aceleram o desempenho e melhoram a qualidade da imagem.",
+        "photo": "/assets/equipamentos/GeForceRTX3060.png",
+        "price": 2359.99,
+        "id": 4
+      },
+      {
+        "title": "Water Cooler Rise Mode Gamer Black, RGB, 240mm, Preto - RM-WCB-02-RGB",
+        "description": "Controla a temperatura do seu processador, acompanha o ritmo e as exigências dos gamers mais intensos!",
+        "photo": "/assets/equipamentos/WaterCoolerRise.png",
+        "price": 479.99,
+        "id": 5
+      },
+      {
+        "title": "Placa de Video Gigabyte GeForce RTX 3060",
+        "description": "Placa de Vídeo Gigabyte GeForce RTX 3060 Gaming OC 12G (rev. 2.0) LHR Sistema de Refrigeração Windforce 3X: O sistema de resfriamento WINDFORCE 3X possui 3 ventiladores de lâmina exclusivos de 80 mm, rotação alternada, 3 tubos de calor de cobre composto com GPU de toque direto, ventilador ativo 3D e resfriamento de tela, que juntos fornecem dissipação de calor de alta eficiência.",
+        "photo": "/assets/equipamentos/GigabyteGeForceRTX3060.png",
+        "price": 2399.99,
+        "id": 6
+      },
+      {
+        "title": "Processador Intel Core i5-10400F, 2.9GHz (4.3GHz Max Turbo), Cache 12MB, 6 Núcleos, 12 Threads, LGA 1200 - BX8070110400F",
+        "description": "Processador Intel Core i5-10400F Os novos processadores Intel Core da 10ª Geração oferecem atualizações de desempenho incríveis para melhorar a produtividade e proporcionar entretenimento surpreendente, incluindo até 5,3 GHz, Intel® Wi-Fi 6 (Gig) tecnologia Thunderbolt™ 3, HDR 4K, otimização de sistema inteligentes e muito mais.",
+        "photo": "/assets/equipamentos/Corei5-10400F.png",
+        "price": 849.99,
+        "id": 7
+      },
+      {
+        "title": "Kit Gamer Motospeed White Storm - Teclado Mecânico CK82 RGB Switch Blue ANSI + Headset G750 RGB 7.1 USB + Mouse V50 4000DPI RGB",
+        "description": "Kit Gamer Motospeed White Storm - Teclado Mecânico CK82 RGB Switch Blue ANSI + Headset G750 RGB 7.1 USB + Mouse V50 4000DPI RGB",
+        "photo": "/assets/equipamentos/kitgamer.png",
+        "price": 849.99,
+        "id": 8
+      }
+  ]

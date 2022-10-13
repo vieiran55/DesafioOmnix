@@ -14,15 +14,15 @@ interface Props {
 export default function Home({ inputcep, setCep }: Props) {
   const navigate = useNavigate();
   const [inputError, setInputError] = useState('');
+
   // const [cep, setCep] = useState('');
-  // function cpfIsValid() {
-  //   if (cep.length === 8) {
-  //     navigate('/ofertas');
-  //     alert('seu cep deve conter 8 digitos!');
-  //     console.log(cep);
-  //     return setCep(cep);
-  //   }
-  
+  function cpfIsValid() {
+    if (inputcep.length === 8) {
+      navigate('/ofertas');
+    } else {
+      alert('seu cep deve conter 8 digitos!');
+    }
+  }
 
   return (
     <>
@@ -37,7 +37,7 @@ export default function Home({ inputcep, setCep }: Props) {
             onChange={e => setCep(e.target.value)}
             type='number'
           />
-          <button type="submit" onClick={() => navigate('/ofertas')}>
+          <button type="submit" onClick={cpfIsValid}>
             Continuar
           </button>
         </form>
